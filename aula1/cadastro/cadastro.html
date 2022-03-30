@@ -10,12 +10,15 @@
 </head>
 <body>
     <h1> Cadastro de Usuário</h1>
-    <form action="cadastro.php" method="post">
-        <label for="">Nome</label>
-        <input type="text" name="nome">
-        <div></div>
-        <label for="">Email</label>
-        <input type="text" name="email">
+    <form action="cadastro.php" method="GET">
+        <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email">
+        </div>
         <button type="submit">Salvar</button>
 
     </form>

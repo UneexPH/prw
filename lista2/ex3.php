@@ -8,13 +8,13 @@ $num = 1;
 $div = 1;
 $qtd_divs = 0;
 
-for($i=1; $i<200; $i++){
+for($i=1; $i<=200; $i++){
     
     $qtd_divs = 0;
 
-    for($div=1; $div<200; $div++){
+    for($div=1; $div<=200; $div++){
 
-        if($i % $div == 1){
+        if($i % $div == 0){
             $qtd_divs++;
         }
 

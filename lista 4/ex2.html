@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+
+<body>
+    <h1> Selecione, Digite, Se Divirta!</h1>
+   ____________________________________________ <br>
+
+
+    <form action="ex2.php" method="GET">
+
+        <div>
+        <br>
+            Mensagem: <textarea name=mensagem cols=8 rows=3></textarea><br>
+            
+        </div>
+
+        <div>
+            <br>
+            <input type=radio name=operacao value="multiplicacao"> Multiplicação
+            <input type=radio name=operacao value="divisao"> Divisão
+            <input type=radio name=operacao value="soma"> Soma
+            <input type=radio name=operacao value=""> Subtração
+            <br>
+        </div>
+
+        <div>
+            <br>
+            <label for="">Numero 1</label>
+            <input type="text" name="num1">
+        </div>
+
+        <div>
+            <label for="">Numero 2</label>
+            <input type="text" name="num2">
+        </div>
+
+        <div>
+            <br>
+            <B>Escolha cores:</B><br>
+        <input type=checkbox name="numeros[]" value=1> cinza<br>
+        <input type=checkbox name="numeros[]" value=2> vermelho<br>
+        <input type=checkbox name="numeros[]" value=3> amarelo<br>
+        <input type=checkbox name="numeros[]" value=4> branco<br>
+        <input type=checkbox name="numeros[]" value=5> preto<br>
+        <input type=checkbox name="numeros[]" value=6> verde<br>
+        <input type=checkbox name="numeros[]" value=7> rosa<br>
+        <input type=checkbox name="numeros[]" value=8> azul<br><BR>
+        
+        </div>
+
+        <div>
+        <B>Qual seu nome?</B><br>
+        <select name=nome>
+        <option value=joao>JOÃO</option>
+        <option value=pedro>PEDRO</option>
+        <option value=maria>MARIA</option>
+        </select><BR><BR>
+
+        <B>Livros que deseja comprar?</B><br>
+        Obs: segure "CTRL" para selecionar mais de um.<BR>
+        <select name="livros[]" multiple>
+        <option value="Biblia do PHP 4">Biblia do PHP 4</option>
+        <option value="PHP Professional">PHP Professional</option>
+        <option value="Iniciando em PHP">Iniciando em PHP</option>
+        <option value="Novidades do PHP 5">Novidades do PHP 5</option>
+        <option value="Biblia do MySQL">Biblia do MySQL</option>
+        </select><BR><BR>
+        </div>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+
+
+</html>

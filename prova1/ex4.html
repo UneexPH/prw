@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <h2> Cadastro </h2>
+    <form action="ex4.php" method="GET">
+        <div>
+            <label for="">Nome do Cliente</label>
+            <input type="text" name="nome">
+        </div>
+        <div>
+            <br>
+            <H4>Estado</H4>
+            <select name="estado" SIZE = 5>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Acre">Acre</option>
+                <option value="Roraima">Roraima</option>
+                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                <option value="Serjipe">Serjipe</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Mato Grosso">Mato Grosso</option>
+                <option value="Mato Grosso Do Sul">Mato Grosso do Sul</option>
+                <option value="Distrito Federal">Distrito Federal</option>
+                <option value="Espírito Santo">Espírito Santo</option>
+                <option value="Paraná">Paraná</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Tocantins">Tocantins</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Amazonas">Amazonas</option>
+                </select><BR><BR>
+        </div>
+
+        <div>
+            <br>
+            <label for="">CPF</label>
+            <input type="text" name="cpf">
+        </div>
+
+        <div>
+            <br>
+            <label for="">RG</label>
+            <input type="text" name="rg">
+        </div>
+
+        <div>
+            <h4>Sexo</h4>
+            <input type=radio name=sexo value="Masculino"> Masculino
+            <input type=radio name=sexo value="Feminino"> Feminino
+            <input type=radio name=sexo value="Outro"> Outro
+            <input type=radio name=sexo value="Não Declarado"> Não Declarar
+            <br>
+        </div>
+
+        <div>
+            <br>
+            <label for="">Saldo do Cartão de Crédito: R$</label>
+            <input type="text" name="saldo">
+        </div>
+
+        <div>
+            <br>
+            <label for="">Total da Compra: R$</label>
+            <input type="text" name="total">
+        </div>
+
+        <BR>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+
+</html>

@@ -10,7 +10,7 @@
    // Verifica se usuário escolheu algum número
     if(isset($_GET["numeros"]))
     {
-    echo " <BR> As cores de sua preferência são:<BR>";
+    echo " <BR><BR> As cores de sua preferência são:<BR>";
 
     // Faz loop pelo array dos numeros
     foreach($_GET["numeros"] as $numero)
@@ -22,21 +22,21 @@
     echo "Você não escolheu cor!<br>";
     }
 
-    echo "Seu nome é: " . $_GET["nome"] . "<BR>";
+    echo "<BR> Seu nome é: " . $_GET["nome"] . "<BR>";
 
     // Verifica se usuário escolheu algum livro
     if(isset($_GET["livros"]))
     {
-    echo "O(s) livro(s) que você deseja comprar:<br>";
+    echo "<BR>Linguagens em que sabe programar:<br>";
     // Faz loop para os livros
-    foreach($_GET["livros"] as $livro)
+    foreach($_GET["linguagens"] as $linguas)
     {
-        echo "- " . $livro . "<br>";
+        echo "- " . $linguas . "<br>";
     }
     }
     else
     {
-    echo "Você não escolheu nenhum livro!";
+    echo "<BR>Você não sabe nenhuma linguagem";
     }
   
 ?>

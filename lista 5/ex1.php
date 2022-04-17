@@ -5,7 +5,29 @@
 //de informática em um vetor e localizar a posição (índice) desse produto dentro do vetor.
 //O índice corresponde ao código do produto que deve ser impresso para o usuário.
 
+$produtos= array('Inexistente','Processador','Cooler','PlacaMae','PlacaDeVideo','HD','SSD','Monitor','Mouse','Headset');
 
+$produto = $_GET['produto'];
+$produto = strtolower($produto);
+$codigo = 0;
+
+for ($i = 0; $i < count($produtos); $i++){
+
+    $produtos[$i] = strtolower($produtos[$i]);
+
+    if($produtos[$i]==$produto){
+
+        $codigo = $i;
+
+    } else {
+
+
+
+    }
+
+}
+
+echo "<h2>Produto: ".$produtos[$codigo]." <br>Código: 0".$codigo."</h2>";
 
 
 ?>

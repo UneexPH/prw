@@ -1,4 +1,4 @@
---drop database projeto01;
+-- drop database projeto01;
 
 create database projeto01;
 

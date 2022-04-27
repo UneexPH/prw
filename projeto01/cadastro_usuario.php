@@ -15,9 +15,9 @@ $sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario)
 
 $result = mysqli_query($con, $sql);
 if($result)
-    echo "Dados inseridos com sucesso.";
+    echo "<br>\nDados inseridos com sucesso.";
 else 
-    echo "Erro ao inserir no banco de dados: ".mysqli_error($con);
+    echo "<br>Erro ao inserir no banco de dados: ".mysqli_error($con);
 
 
 

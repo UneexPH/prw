@@ -1,6 +1,6 @@
 <?php
     include('conexao.php');
-    $sql = 'SELECT * FROM usauario';
+    $sql = 'SELECT * FROM usuario';
     //retorna todos os dados da consulta
     $result = mysqli_query($con, $sql);
 

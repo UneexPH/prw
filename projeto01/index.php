@@ -9,7 +9,6 @@
 </head>
 <body>
     <h1>Menu Principal</h1>
-    <br>
     <div id="menu">
         <ul>
             <li><a href="cadastro_usuario.html">Cadastrar Usuário</a>

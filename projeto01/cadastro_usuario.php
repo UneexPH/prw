@@ -19,8 +19,7 @@ if($result)
 else 
     echo "<br>Erro ao inserir no banco de dados: ".mysqli_error($con);
 
-
-
-     
-
 ?>
+
+<br>
+<a href='index.php'> Voltar </a>

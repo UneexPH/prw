@@ -26,7 +26,7 @@
     <fieldset>
     <legend><h1> Alteração de Usuário </h1></legend>
 
-    <form action="cadastro_usuario.php" method="GET">
+    <form action="altera_usuario_exe.php" method="post">
     
         <div>
             <label for="">Nome: </label>
@@ -48,8 +48,11 @@
 
         <br>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Alterar</button>
     </fieldset>
+
+    <br>
+    <a href='index.php'> Voltar </a>
 
     </form>
 </body>

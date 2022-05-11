@@ -1,4 +1,4 @@
-drop database projetoAgenda;
+-- drop database projetoAgenda;
 
 create database projetoAgenda;
 

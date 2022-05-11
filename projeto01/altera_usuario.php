@@ -6,9 +6,7 @@
  $result = mysqli_query($con,$sql);
  $row = mysqli_fetch_array($result);
 
-
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -45,6 +43,7 @@
             <input type="text" name="tel"
             value="<?php echo $row['telefone_usuario'] ?>" placeholder="Digite o telefone">
         </div>
+        <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
 
         <br>
 

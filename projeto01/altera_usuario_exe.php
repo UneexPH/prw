@@ -1,9 +1,9 @@
 <?php
     include('conexao.php');
-    $id_usuario = $POST['id_usuario'];
-    $nome = $POST['nome'];
-    $email = $POST['email'];
-    $telefone = $POST['telefone'];
+    $id_usuario = $_POST['id_usuario'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
 
     echo "<h1> Alteração de dados </h1>";
     echo "<p> Nome Usuário: " . $nome . "<p>";
@@ -11,7 +11,7 @@
     $sql = "UPDATE usuario SET
                 nome_usuario='".$nome."',
                 email_usuario='".$email."',
-                telefone_usuario='".$telefone."'
+                telefone_usuario='".$tel."'
                 WHERE id_usuario=".$id_usuario;
 
     $result = mysqli_query($con, $sql);

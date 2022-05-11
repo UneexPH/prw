@@ -13,7 +13,6 @@
         <ul>
             <li><a href="cadastro_usuario.html">Cadastrar Usuário</a>
             <li><a href="listar_usuarios.php">Listar Usuários</a>
-            <li><a href="altera_usuario.php">Alterar Usuários</a>
         </ul>
     </div>
 </body>

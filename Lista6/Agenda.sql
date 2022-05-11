@@ -1,3 +1,5 @@
+drop database projetoAgenda;
+
 create database projetoAgenda;
 
 use projetoAgenda;

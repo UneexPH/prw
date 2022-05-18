@@ -11,8 +11,8 @@
     <h1>Menu Principal</h1>
     <div id="menu">
         <ul>
-            <li><a href="cadastro_agenda.html">Cadastrar Usuário</a>
-            <li><a href="listar_agenda.php">Listar Usuários</a>
+            <li><a href="cadastro_agenda.html">Cadastrar Agenda</a>
+            <li><a href="listar_agenda.php">Listar Agendas</a>
         </ul>
     </div>
 </body>

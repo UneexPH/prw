@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1>Listagem de Agendas</h1>
-    <table align="center" border="3" width=500>
+    <table align="center" border="3" width=500 >
         <tr>
             <th>Código</th>
             <th>Nome</th>

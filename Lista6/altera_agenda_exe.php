@@ -15,7 +15,7 @@
     echo "<h1> Alteração de dados </h1>";
     echo "<p> Nome Agenda: " . $nome . "<p>";
 
-    $sql = "UPDATE usuario SET
+    $sql = "UPDATE agenda SET
                 nome='".$nome."',
                 apelido='".$apelido."',
                 endereco='".$endereco."',
@@ -25,7 +25,7 @@
                 telefone='".$telefone."',
                 celular='".$celular."',
                 email='".$email."',
-                dt_cadastro='".$dt_cadastro."',
+                dt_cadastro='".$dt_cadastro."'
                 WHERE id_agenda=".$id_agenda;
 
     $result = mysqli_query($con, $sql);

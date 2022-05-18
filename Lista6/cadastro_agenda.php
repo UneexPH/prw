@@ -11,7 +11,7 @@ $estado = $_GET['estado'];
 $telefone = $_GET['telefone'];
 $celular = $_GET['celular'];
 $email = $_GET['email'];
-$dt_cadastro = date("Y-j-d");
+$dt_cadastro = date("d-j-Y");
 
 
 echo "<br>Nome: ".$nome;

@@ -24,46 +24,57 @@
     <fieldset>
     <legend><h1> Alterar informações Agenda</h1></legend>
 
-    <form action="altera_agenda_exe.php" method="GET">
+    <form action="altera_agenda_exe.php" method="POST">
     
         <div>
             <label for="">Nome: </label>
-            <input type="text" name="nome">
+            <input type="text" name="nome"
+            value="<?php echo $row['nome'] ?>" placeholder="Digite o nome">
         </div>
         <br>
         <div>
             <label for="">Apelido: </label>
-            <input type="text" name="apelido">
+            <input type="text" name="apelido"
+            value="<?php echo $row['apelido'] ?>" placeholder="Digite o apelido">
         </div>
         <br>
         <div>
             <label for="">Endereço: </label>
-            <input type="text" name="endereco">
+            <input type="text" name="endereco"
+            value="<?php echo $row['endereco'] ?>" placeholder="Digite o endereço">
         </div>
         <div>
             <label for="">Bairro: </label>
-            <input type="text" name="bairro">
+            <input type="text" name="bairro"
+            value="<?php echo $row['bairro'] ?>" placeholder="Digite o bairro">
         </div>
         <div>
             <label for="">Cidade: </label>
-            <input type="text" name="cidade">
+            <input type="text" name="cidade"
+            value="<?php echo $row['cidade'] ?>" placeholder="Digite a cidade">
         </div>
         <div>
             <label for="">Estado: </label>
-            <input type="text" name="estado">
+            <input type="text" name="estado"
+            value="<?php echo $row['estado'] ?>" placeholder="Digite o estado">
         </div>
         <div>
             <label for="">Telefone: </label>
-            <input type="text" name="telefone">
+            <input type="text" name="telefone"
+            value="<?php echo $row['telefone'] ?>" placeholder="Digite o telefone">
         </div>
         <div>
             <label for="">Celular: </label>
-            <input type="text" name="celular">
+            <input type="text" name="celular"
+            value="<?php echo $row['celular'] ?>" placeholder="Digite o celular">
         </div>
         <div>
             <label for="">E-Mail: </label>
-            <input type="email" name="email">
+            <input type="email" name="email"
+            value="<?php echo $row['email'] ?>" placeholder="Digite o email">
         </div>
+        <input name="id_agenda" type="hidden" value="<?php echo $row['id_agenda']?>">
+        
         <br>
 
         <button type="submit">Alterar</button>

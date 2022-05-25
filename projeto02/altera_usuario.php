@@ -23,8 +23,11 @@
 <body>
     <fieldset>
     <legend><h1> Alteração de Usuário </h1></legend>
-    
-    <form action="altera_usuario_exe.php" method="post">
+    <br>
+    <?php echo "<img class='center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' align='center' width='150' height='150'/>"; ?>  
+    <br>
+
+    <form action="altera_usuario_exe.php" method="post" enctype="multipart/form-data">
     
         <div>
             <label for="">Nome: </label>
@@ -43,7 +46,9 @@
             <input type="text" name="tel"
             value="<?php echo $row['telefone_usuario'] ?>" placeholder="Digite o telefone">
         </div>
-
+        <div class="form-item">
+            <input type="file" id="foto" name="foto" accept="image/*" />
+        </div>   
         <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
 
         <br>

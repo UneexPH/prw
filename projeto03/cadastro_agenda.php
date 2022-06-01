@@ -14,15 +14,15 @@ if( in_array($imageFileType,$extensions_arr) ){
     }
 }
 
-$nome = $_GET['nome'];
-$apelido = $_GET['apelido'];
-$endereco = $_GET['endereco'];
-$bairro = $_GET['bairro'];
-$cidade = $_GET['cidade'];
-$estado = $_GET['estado'];
-$telefone = $_GET['telefone'];
-$celular = $_GET['celular'];
-$email = $_GET['email'];
+$nome = $_POST['nome'];
+$apelido = $_POST['apelido'];
+$endereco = $_POST['endereco'];
+$bairro = $_POST['bairro'];
+$cidade = $_POST['cidade'];
+$estado = $_POST['estado'];
+$telefone = $_POST['telefone'];
+$celular = $_POST['celular'];
+$email = $_POST['email'];
 $dt_cadastro = date("d-j-Y");
 
 

@@ -24,7 +24,11 @@
     <fieldset>
     <legend><h1> Alterar informações Agenda</h1></legend>
 
-    <form action="altera_agenda_exe.php" method="POST">
+    <br>
+    <?php echo "<img class='center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' align='center' width='150' height='150'/>"; ?>  
+    <br>
+
+    <form action="altera_agenda_exe.php" method="POST" enctype="multipart/form-data">
     
         <div>
             <label for="">Nome: </label>
@@ -73,8 +77,12 @@
             <input type="email" name="email"
             value="<?php echo $row['email'] ?>" placeholder="Digite o email">
         </div>
+        </div>
+        <div class="form-item">
+            <label for="">Alterar Retrato: </label>
+            <input type="file" id="foto" name="foto" accept="image/*" />
+        </div>   
         <input name="id_agenda" type="hidden" value="<?php echo $row['id_agenda']?>">
-        
         <br>
 
         <button type="submit">Alterar</button>

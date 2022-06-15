@@ -28,12 +28,12 @@
     
         <div>
             <label for="">Data: </label>
-            <input type="date" name="data">
+            <input type="date" name="data" value="<?php echo $row['data_op'] ?>">
         </div>
         <br>
         <div>
             <label for="">Tipo: </label>
-            <input type=radio name=tipo value="Entrada"> Entrada
+            <input type=radio name=tipo value="Entrada" checked> Entrada
             <input type=radio name=tipo value="Saida"> Saída
         </div>
         <br>
